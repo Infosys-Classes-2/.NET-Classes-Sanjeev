@@ -1,6 +1,14 @@
 ﻿using System;
-Console.WriteLine("Your Name: - ");
-string name = Console.ReadLine();
+// Console.Write("Your Full Name: ");
+// var fullName = Console.ReadLine();
+// var len = fullName.IndexOf(" ");
+// var firstName = fullName.Substring(0, len);
 
+// Console.WriteLine($"Hello, {firstName}!");
 
-Console.WriteLine($"Hello, {name}");
+//Class work 1
+
+Console.Write("Enter your Name:");
+var name = Console.ReadLine();
+var uppercase = name.ToUpper();
+Console.WriteLine(uppercase);
