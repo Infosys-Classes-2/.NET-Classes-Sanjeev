@@ -16,6 +16,7 @@ class Animal
 
    internal void PrintDetails()
     {
+        Eat();
         Console.WriteLine($"Weight of {type} is {weight} kg. ");
     }
 }

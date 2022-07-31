@@ -1,4 +1,4 @@
-﻿/* using System;
+﻿/* /* using System;
 Console.Write("Enter number of days: ");
 double numberofdays = int.Parse(Console.ReadLine());
 double years = numberofdays/365;
@@ -14,7 +14,7 @@ Console.WriteLine($"The {numberofdays} days is equivalent to {years} Years, {mon
         days = (ndays % 365) % DAYSINWEEK;
         Console.WriteLine("{0} is equivalent to {1}years, {2}weeks and {3}days", ndays, year, week, days); */
 
-    using System;
+/*     using System;
         double num     =0;
         double years   =0;
         double months =0;
@@ -33,4 +33,4 @@ Console.WriteLine($"The {numberofdays} days is equivalent to {years} Years, {mon
         Console.WriteLine("Years : " + years);
         Console.WriteLine("Months :" + months);
         Console.WriteLine("Weeks : " + weeks);
-        Console.WriteLine("Days  : " + days );
+        Console.WriteLine("Days  : " + days ); */
