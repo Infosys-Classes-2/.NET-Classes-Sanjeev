@@ -85,7 +85,9 @@ internal class BranchesAndLoops
             Console.WriteLine(i++);
         } */
 
-        int count=0;
+
+        //Program to print prime numbers less than 500.
+        /* int count=0;
             Console.WriteLine("Prime numbers between 1 and 500 are: ");
             for (int i = 1; i < 500; i++)
             {
@@ -105,8 +107,49 @@ internal class BranchesAndLoops
                         Console.Write(i+"  ");
                     }
                 }
-            }
+            } */
 
+
+
+            /* Program to print following pattern: 
+            1
+            12
+            123
+            1234
+            12345
+            123456 */
+            
+          /*  for(int i = 1; i < 7; i++)
+            {
+                for(int j = 1; j<= i; j++)
+                {
+                    Console.Write(j);
+                }
+                Console.WriteLine();
+            } */
+
+
+      /*   Program to print following pattern:
+
+    *
+   ***
+  *****
+ *******
+********* 
+*/
+    int number, i, k, count = 1;
+        Console.Write("Enter number of rows\n");
+        number = int.Parse(Console.ReadLine());
+        count = number - 1;
+        for (k = 1; k <= number; k++)
+        {
+            for (i = 1; i <= count; i++)
+                Console.Write(" ");
+            count--;
+            for (i = 1; i <= 2 * k - 1; i++)
+                Console.Write("*");
+            Console.WriteLine();
+        }
 
         //while
 /*         ConsoleKeyInfo keyInfo = new();
