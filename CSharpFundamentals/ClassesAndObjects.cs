@@ -1,8 +1,8 @@
 //Animal
 
-using System;
+/* using System; */
 
-class Animal
+/* class Animal
 {
     //Members: fields, methods
     //Access modifiers: public, private, internal, proteted
@@ -35,4 +35,5 @@ class TestClasses
         cow.type = "Cow";
         cow.PrintDetails();
     }
-}
+} */
+
