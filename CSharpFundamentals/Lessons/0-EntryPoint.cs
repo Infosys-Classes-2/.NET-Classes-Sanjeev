@@ -1,3 +1,5 @@
+using System;
+
 class TestClasses
 {
     public static void Main()
@@ -11,7 +13,12 @@ class TestClasses
         cow.weight = 345.6f;
         cow.type = "Cow";
         cow.PrintDetails(); */
-        BranchesAndLoops br = new();
-        br.LearLooping();
+        ;/* BranchesAndLoops br = new();
+        br.LearLooping(); */
+        MethodLearning ml = new();
+        ml.PrintNepal();
+        ml.PrintNepalNTimes(10);
+        var x = ml.GetInitials("Saneev Shrestha");
+        Console.WriteLine(x);
     }
 }

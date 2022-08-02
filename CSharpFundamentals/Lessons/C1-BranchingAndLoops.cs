@@ -118,7 +118,7 @@ internal class BranchesAndLoops
             1234
             12345
             123456 */
-            
+
           /*  for(int i = 1; i < 7; i++)
             {
                 for(int j = 1; j<= i; j++)
@@ -137,7 +137,7 @@ internal class BranchesAndLoops
  *******
 ********* 
 */
-    int number, i, k, count = 1;
+    /* int number, i, k, count = 1;
         Console.Write("Enter number of rows\n");
         number = int.Parse(Console.ReadLine());
         count = number - 1;
@@ -149,8 +149,20 @@ internal class BranchesAndLoops
             for (i = 1; i <= 2 * k - 1; i++)
                 Console.Write("*");
             Console.WriteLine();
-        }
+        } */
 
+        for (int i = 1; i <= 10; i++)
+        {
+            for (int j = 9; j >= i; j--)
+            {
+                Console.Write(" ");
+            }
+
+            for (int j = 1; j <= 2 * i; j++)
+            {
+                Console.Write("*");
+            }
+        }
         //while
 /*         ConsoleKeyInfo keyInfo = new();
         while(keyInfo.Key ! = ConsoleKey.Escape)
@@ -159,6 +171,19 @@ internal class BranchesAndLoops
             keyInfo = Console.ReadKey();
         } */
         //do-while
+
+
         //foreach
+        /* byte[] ages = {34, 56, 23, 12, 21, 98, 54};
+
+        for(int x = 0; x < ages.Length; x++)
+        {
+            Console.WriteLine(ages[x]);
+        }  
+
+        foreach(var age in ages)
+        {
+            Console.WriteLine(age);
+        } */   
     }
 }
