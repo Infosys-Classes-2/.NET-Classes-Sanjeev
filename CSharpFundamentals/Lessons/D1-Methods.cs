@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 public class MethodLearning
 {
@@ -9,7 +10,7 @@ public class MethodLearning
         } */
 
     //returns nothing, take some arguments
-        /* public void PrintNepalNTimes(int n)
+        /* public void PrintNepal(int n)
         {
             for (int i = 0; i < n; i++)
             {
@@ -40,6 +41,7 @@ public class MethodLearning
     //returns multiple values, take no/some arguments
     public (short, short) GetMinMax(short[] numbers)
         {
+            //Imperative
             short max = short.MinValue;
             short min = short.MaxValue;
             foreach (short num in numbers)
@@ -52,7 +54,7 @@ public class MethodLearning
             }
             return (min, max); //tuple
         }
-        public (short, short, float) GetMinMaxAverage(short[] numbers)
+    public (short, short, float) GetMinMaxAverage(short[] numbers)
         {
             short max = short.MinValue;
             short min = short.MaxValue;
@@ -71,7 +73,41 @@ public class MethodLearning
             return (min, max, sum/len); //tuple
         }
         
+    public (short, short) GetMinimumMaximum(short[] numbers)
+        {
+            short max = numbers.Max;
+            short min = numbers.Min;
+            
+            return (min, max);
+        }
     //variable number of arguments, named parameters, optional parameters
 
+    public void Test()
+    {
+        //Named parameters
+        Add(y:45, x: 23);
+
+        Multiply(23.4, 56.7);
+        Multiply(23.4, 56.7, 67.8);
+
+        PrintText("Bishnu");
+        PrintText("Ram", "Shyam", "Sita", "Gita");
+    }
+
+    public double Multiply(double x, double y, double z)
+    {
+        return x * y * z;
+    }
+
+    public void PrintText(params string[] names)
+    {
+        foreach (var name in names)
+        {
+            Console.WriteLine(name);
+        }
+    }
+
+    //Expression bodies members, inline methods
+    public float Divide(float x, float y) => x / y; //=> is lambda operater
 
 }

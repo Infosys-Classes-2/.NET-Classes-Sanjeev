@@ -17,7 +17,7 @@ class TestClasses
         br.LearLooping(); */
         MethodLearning ml = new();
         /* ml.PrintNepal();
-        ml.PrintNepalNTimes(10);
+        ml.PrintNepal(10);
         var x = ml.GetInitials("Saneev Kumar Shrestha"); */
         short[] numbers = {12, 15, 2, -5};
         var (min, max, Average) = ml.GetMinMaxAverage(numbers);
