@@ -16,9 +16,11 @@ class TestClasses
         ;/* BranchesAndLoops br = new();
         br.LearLooping(); */
         MethodLearning ml = new();
-        ml.PrintNepal();
+        /* ml.PrintNepal();
         ml.PrintNepalNTimes(10);
-        var x = ml.GetInitials("Saneev Shrestha");
-        Console.WriteLine(x);
+        var x = ml.GetInitials("Saneev Kumar Shrestha"); */
+        short[] numbers = {12, 15, 2, -5};
+        var (min, max, Average) = ml.GetMinMaxAverage(numbers);
+        Console.WriteLine($"Minimum: {min}, Maxmimum: {max}, Average Value : {Average}");
     }
 }
