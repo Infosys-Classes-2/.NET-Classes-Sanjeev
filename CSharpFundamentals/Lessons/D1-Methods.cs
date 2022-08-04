@@ -1,4 +1,4 @@
-using System;
+/* using System;
 using System.Linq;
 
 public class MethodLearning
@@ -39,7 +39,7 @@ public class MethodLearning
             } */
 
     //returns multiple values, take no/some arguments
-    public (short, short) GetMinMax(short[] numbers)
+    /* public (short, short) GetMinMax(short[] numbers)
         {
             //Imperative
             short max = short.MinValue;
@@ -54,8 +54,8 @@ public class MethodLearning
             }
             return (min, max); //tuple
         }
-    public (short, short, float) GetMinMaxAverage(short[] numbers)
-        {
+    public (short, short, float) GetMinMaxAverage(short[] numbers) */
+        /* {
             short max = short.MinValue;
             short min = short.MaxValue;
             int sum = 0;
@@ -71,18 +71,18 @@ public class MethodLearning
                 sum = sum + num; 
             }
             return (min, max, sum/len); //tuple
-        }
+        } */
         
-    public (short, short) GetMinimumMaximum(short[] numbers)
+    /* public (short, short) GetMinimumMaximum(short[] numbers)
         {
             short max = numbers.Max;
             short min = numbers.Min;
             
             return (min, max);
-        }
+        } */
     //variable number of arguments, named parameters, optional parameters
 
-    public void Test()
+   /*  public void Test()
     {
         //Named parameters
         Add(y:45, x: 23);
@@ -92,22 +92,22 @@ public class MethodLearning
 
         PrintText("Bishnu");
         PrintText("Ram", "Shyam", "Sita", "Gita");
-    }
+    } */
 
-    public double Multiply(double x, double y, double z)
+   /*  public double Multiply(double x, double y, double z)
     {
         return x * y * z;
-    }
+    } */
 
-    public void PrintText(params string[] names)
+   /*  public void PrintText(params string[] names)
     {
         foreach (var name in names)
         {
             Console.WriteLine(name);
         }
-    }
+    } */
 
     //Expression bodies members, inline methods
-    public float Divide(float x, float y) => x / y; //=> is lambda operater
+   /*  public float Divide(float x, float y) => x / y; //=> is lambda operater
 
-}
+}*/
