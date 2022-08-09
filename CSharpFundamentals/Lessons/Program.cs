@@ -1,5 +1,5 @@
-﻿/* /* using System;
-Console.Write("Enter number of days: ");
+﻿ using System;
+/*Console.Write("Enter number of days: ");
 double numberofdays = int.Parse(Console.ReadLine());
 double years = numberofdays/365;
 double months = numberofdays/30;
@@ -34,3 +34,49 @@ Console.WriteLine($"The {numberofdays} days is equivalent to {years} Years, {mon
         Console.WriteLine("Months :" + months);
         Console.WriteLine("Weeks : " + weeks);
         Console.WriteLine("Days  : " + days ); */
+
+// base class name 'baseClass'
+class baseClass
+ 
+{
+    public void show()
+    {
+        Console.WriteLine("Base class");
+    }
+}
+ 
+// derived class name 'derived'
+// 'baseClass' inherit here
+class derived : baseClass
+{
+     
+    // overriding
+    new public void show()
+    {
+        Console.WriteLine("Derived class");
+    }
+}
+  
+class GFG {
+     
+    // Main Method
+    public static void Main()
+    {
+         
+        // 'obj' is the object of
+        // class 'baseClass'
+        baseClass obj = new baseClass();
+        
+        
+        // invokes the method 'show()'
+        // of class 'baseClass'
+        obj.show();
+         
+        obj = new derived();
+         
+        // it also invokes the method
+        // 'show()' of class 'baseClass'
+        obj.show();
+         
+    }
+}
